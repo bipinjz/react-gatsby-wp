@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+<<<<<<< HEAD
     title: `WP GraphQL Gatsby Starter`,
     description: `Get started...`,
     author: `@n8finch`,
@@ -48,3 +49,52 @@ module.exports = {
     `gatsby-plugin-offline`,
   ],
 }
+=======
+    title: "React Gatsby WP Blog",
+  },
+  plugins: [
+    {
+      resolve: "gatsby-source-wordpress",
+      options: {
+        url: "https://bipinbajracharya.com/react-wpadmin/react-nextjs/graphql",
+      },
+    },
+    "gatsby-plugin-sass",
+    "gatsby-plugin-image",
+    {
+      resolve: "gatsby-plugin-google-analytics",
+      options: {
+        trackingId: "",
+      },
+    },
+    "gatsby-plugin-react-helmet",
+    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-manifest",
+      options: {
+        icon: "src/images/icon.png",
+      },
+    },
+    "gatsby-transformer-remark",
+    "gatsby-plugin-mdx",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "images",
+        path: "./src/images/",
+      },
+      __key: "images",
+    },
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "pages",
+        path: "./src/pages/",
+      },
+      __key: "pages",
+    },
+  ],
+};
+>>>>>>> 297ea48f43d3999eea26191144b3df62be4db52d
